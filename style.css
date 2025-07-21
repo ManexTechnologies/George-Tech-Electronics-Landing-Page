@@ -192,12 +192,12 @@ footer p a{
     }
 
     .arrivals {
-        height: 40vh; /* reduce height on smaller screens */
+        height: 40vh; 
         background-position: top;
     }
 
     .new {
-        width: 90%; /* make the new arrivals section take most of the screen */
+        width: 90%;
         height: auto;
         margin: 10px auto;
     }
@@ -216,7 +216,7 @@ footer p a{
     }
 
     .container {
-        grid-template-columns: 1fr; /* single column layout on small screens */
+        grid-template-columns: 1fr; 
         gap: 15px;
         padding: 10px;
     }
@@ -266,4 +266,110 @@ footer p a{
     .arrivals {
         height: 30vh;
     }
+}
+@media (max-width: 480px) {
+    .new {
+        width: 98%;
+        max-width: 350px;
+        min-width: 0;
+        margin: 8px auto;
+        padding: 8px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .products {
+        width: 98%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 8px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 5px;
+        gap: 8px;
+    }
+}
+@media (max-width: 300px) {
+    .new {
+        width: 99%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 4px auto;
+        padding: 4px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .products {
+        width: 99%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 4px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 2px;
+        gap: 4px;
+    }
+
+    .new h1,
+    .Phone h1 {
+        font-size: 12px;
+    }
+
+    .new p,
+    .Phone p {
+        font-size: 8px;
+    }
+}
+@media (max-width: 400px) {
+    .new {
+        width: 98%;
+        max-width: 320px;
+        min-width: 0;
+        margin: 8px auto;
+        padding: 8px;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .new h1 { font-size: 18px; }
+    .new p { font-size: 14px; }
+    .new p1 { font-size: 12px; }
+    .button { font-size: 14px; padding: 6px 10px; }
+
+    .arrivals {
+        height: 38vh; 
+        min-height: 200px;
+        background-position: top;
+    }
+}
+
+@media (max-width: 350px) {
+    .new {
+        width: 99%;
+        max-width: 260px;
+        margin: 6px auto;
+        padding: 6px;
+    }
+    .new h1 { font-size: 15px; }
+    .new p { font-size: 11px; }
+    .new p1 { font-size: 10px; }
+    .button { font-size: 12px; padding: 5px 8px; }
+}
+
+@media (max-width: 250px) {
+    .new {
+        width: 100%;
+        max-width: 180px;
+        margin: 2px auto;
+        padding: 2px;
+    }
+    .new h1 { font-size: 10px; }
+    .new p, .new p1 { font-size: 7px; }
+    .button { font-size: 9px; padding: 3px 5px; }
 }
