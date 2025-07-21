@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color:white;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+.logo h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-items: center;
+
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.navigation ul li a:hover {
+    color: burlywood;
+}
+.navigation ul li a.active {
+    color: burlywood;
+}
+
+.arrivals{
+    max-width: 1300px;
+    height: 70vh;
+    background-image: url(hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.new{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #333;
+    margin: 15px;
+}
+.new h1{
+    text-align: center;
+    margin-bottom: 5px;
+    color: burlywood;
+    font-size: 24px;
+    font-weight:bold;
+}
+.new p{
+    text-align: center;
+    color: beige;
+    font-size: 20px;
+}
+.new p1{
+    font-size: 16px;
+    color: bisque;
+    text-align: center;
+}
+.button{
+    background-color: burlywood;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+}
+.header, .header-p{
+    padding: 15px;
+    text-align: center;
+    color: #333;
+}
+.header h, .header-p h{
+    font-size: 18px;
+    color: burlywood;
+}
+.header p{
+    font-size: 14px;
+}
+.products{
+    width: 100%;
+    max-width: 1300px;
+    height: 70vh;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.container h{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.Phone  {
+    border-radius: 10px;
+    overflow: hidden;
+    transition:0.4s;
+}
+.Phone h1, .Phones h1{
+    text-align: center;
+    color: burlywood;
+    font-size: 18px;
+}
+.Phone img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+.Phones img{
+    width: 100%;
+    height: 68%;
+    border-radius: 10px;
+    display: block;
+}
+.Phone h1{
+    text-align: center;
+    color: burlywood;
+    font-size: 18px;
+}
+.Phone p{
+    text-align: center;
+    font-size: 12px;
+}
+.end{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+footer{
+    background-color: #333;
+    margin-top: 25px;
+}
+footer p{
+    text-align: center;
+    color: burlywood;
+}
+footer p a{
+    color: white;
+}
+.address{
+    display: flex;
+    justify-content: center;
+}
+.address p{
+    font-size: 16px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation ul li a {
+        font-size: 14px;
+    }
+
+    .arrivals {
+        height: 40vh; /* reduce height on smaller screens */
+        background-position: top;
+    }
+
+    .new {
+        width: 90%; /* make the new arrivals section take most of the screen */
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .new h1 {
+        font-size: 20px;
+    }
+
+    .new p {
+        font-size: 16px;
+    }
+
+    .products {
+        height: auto;
+        padding: 10px;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* single column layout on small screens */
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .Phone h1 {
+        font-size: 16px;
+    }
+
+    .Phone p {
+        font-size: 12px;
+    }
+
+    footer p, .address p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    .navigation ul li a {
+        font-size: 12px;
+    }
+
+    .new h1 {
+        font-size: 18px;
+    }
+
+    .new p {
+        font-size: 14px;
+    }
+
+    .Phone h1 {
+        font-size: 14px;
+    }
+
+    .Phone p {
+        font-size: 10px;
+    }
+
+    .arrivals {
+        height: 30vh;
+    }
+}
